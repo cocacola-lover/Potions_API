@@ -2,7 +2,7 @@
     "IngredientType" : "CREATE TABLE IngredientType (id INT PRIMARY KEY AUTO_INCREMENT, ingredientType VARCHAR(255) NOT NULL UNIQUE);",
     "IngredientOrigin" : "CREATE TABLE IngredientOrigin (id INT PRIMARY KEY AUTO_INCREMENT, ingredientOrigin VARCHAR(255) NOT NULL UNIQUE);",
     "Ingrediens" : "CREATE TABLE Ingredients (id INT PRIMARY KEY AUTO_INCREMENT, rarity INT, ingredientType INT, A INT, B INT, C INT, D INT, E INT, total INT, taste BOOLEAN, sensation BOOLEAN, aroma BOOLEAN, visual BOOLEAN, sound BOOLEAN, base_price INT, ingredientOrigin INT, FOREIGN KEY (ingredientType) REFERENCES IngredientType(id), FOREIGN KEY (ingredientOrigin) REFERENCES IngredientOrigin(id));",
-    "PotionQuality" : "CREATE TABLE PotionQuality (tier VARCHAR(255) PRIMARY KEY, oneStar INT, twoStar INT, threeStar INT, fourStar INT, fiveStar INT);",
+    "PotionQuality" : "CREATE TABLE PotionQuality (tier VARCHAR(255) PRIMARY KEY, zeroStar INT, oneStar INT, twoStar INT, threeStar INT, fourStar INT, fiveStar INT);",
     "PotionType" : "CREATE TABLE PotionType (id INT PRIMARY KEY AUTO_INCREMENT, potionType VARCHAR(255) NOT NULL UNIQUE);",
     "Potions" : "CREATE TABLE Potions (potionName VARCHAR(255) PRIMARY KEY, potionType INT, A INT, B INT, C INT, D INT, E INT, FOREIGN KEY (potionType) REFERENCES PotionType(id));"
 }
