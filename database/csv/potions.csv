@@ -1,0 +1,21 @@
+Potion,Type,A,B,C,D,E
+Health Potion,Potion,1,1,0,0,0
+Mana Potion,Potion,0,1,1,0,0
+Stamina Potion,Potion,1,0,0,0,1
+Speed Potion,Potion,0,0,1,1,0
+Tolerance Potion,Potion,0,0,0,1,1
+Fire Tonic,Tonic,1,0,1,0,0
+Ice Tonic,Tonic,1,0,0,1,0
+Thunder Tonic,Tonic,0,1,0,1,0
+Shadow Tonic,Tonic,0,1,0,0,1
+Radiation Tonic,Tonic,0,0,1,0,1
+Sight Enhancer,Enhancer,3,4,3,0,0
+Alertness Enhancer,Enhancer,0,3,4,3,0
+Insight Enhancer,Enhancer,4,3,0,0,3
+Dowsing Enhancer,Enhancer,3,0,0,3,4
+Seeking Enhancer,Enhancer,0,0,3,4,3
+Poison Cure,Cures,2,0,1,1,0
+Drowsiness Cure,Cures,1,1,0,2,0
+Petrification Cure,Cures,1,0,2,0,1
+Silence Cure,Cures,0,2,1,0,1
+Curse Cure,Cures,0,1,1,0,2

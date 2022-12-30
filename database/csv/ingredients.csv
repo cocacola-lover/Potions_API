@@ -1,0 +1,207 @@
+Ingredient,Rarity,Type,A,B,C,D,E,Total,Taste,Sensation,Aroma,Visual,Sound,BasePrice,Location
+Fairy Flower Bulb,1,Flower,4,0,0,0,0,4,false,false,true,false,false,14,Enchanted Forest
+Impstool Mushroom,1,Mushroom,0,4,0,0,0,4,false,true,false,false,false,17,Enchanted Forest
+Rotfly Larva,1,Insect,0,0,4,0,0,4,true,false,false,false,false,10,Enchanted Forest
+Feyberry,1,Fruit,6,0,0,0,0,6,false,false,false,false,false,4,Enchanted Forest
+Mandrake Root,1,Plant,0,6,0,0,0,6,false,false,false,false,false,6,Enchanted Forest
+Sack of Slime,1,Slime,0,0,6,0,0,6,false,false,false,false,false,7,Enchanted Forest
+River Calamari,1,Fish,8,0,0,0,0,8,false,true,false,false,false,5,Enchanted Forest
+Serpents Slippery Tongue,1,Flesh,0,8,0,0,0,8,false,false,true,false,false,6,Enchanted Forest
+Unicorn Horn,1,Bone,0,0,8,0,0,8,true,false,false,false,false,6,Enchanted Forest
+River-Pixie's Shell,2,Mineral,4,4,0,0,0,8,false,false,false,false,false,11,Enchanted Forest
+Kappa Pheromones,2,Essence,4,0,4,0,0,8,false,false,false,false,false,13,Enchanted Forest
+Pixiedust Diamond,2,Gem,0,4,4,0,0,8,false,false,false,false,false,14,Enchanted Forest
+Cubic Ooze,3,Slime,3,3,3,0,0,9,false,false,false,false,false,16,Enchanted Forest
+Trollstool Mushroom,1,Fungus,0,12,0,0,0,12,false,true,false,false,false,20,Mushroom Mire
+Murkwater Pearl,2,Gem,0,0,0,12,0,12,false,false,false,true,false,27,Mushroom Mire
+Bog Beet,3,Plant,0,27,0,0,0,27,true,false,false,false,true,27,Mushroom Mire
+Ravens Shadow,3,Essence,0,10,12,18,0,40,false,false,false,false,false,52,Mushroom Mire
+Wraith Orchid,1,Flower,0,0,0,12,0,12,false,false,false,false,false,19,Mushroom Mire
+Puckberry,1,Fruit,18,0,0,0,0,18,false,false,false,false,false,16,Mushroom Mire
+Swamp Octopus,1,Fish,24,0,0,0,0,24,false,true,false,false,false,18,Mushroom Mire
+Crocodile Tooth,1,Bone,6,0,12,0,0,18,false,false,false,false,false,20,Mushroom Mire
+Sack of Hive Slime,1,Slime,0,0,18,0,0,18,false,false,false,false,false,21,Mushroom Mire
+Swamp Fish,1,Fish,12,0,0,6,0,18,false,false,false,false,false,22,Mushroom Mire
+Warg Pheromones,2,Essence,12,0,12,0,0,24,false,false,false,false,false,26,Mushroom Mire
+Ghostlight Bloom,2,Flower,18,0,0,6,0,24,false,false,false,false,false,28,Mushroom Mire
+Moss Berries,1,Fruit,0,10,20,0,0,30,false,false,false,false,false,35,Mushroom Mire
+Bubble Ooze,4,Slime,9,9,12,12,0,42,false,false,false,false,false,60,Mushroom Mire
+Miasma Spore,2,Fungus,0,18,0,6,0,24,false,false,false,false,false,30,Mushroom Mire
+Mud Shrimp,3,Fish,6,0,12,0,0,18,false,false,true,false,false,53,Mushroom Mire
+Hydra Vertebra,1,Bone,9,9,9,0,0,27,false,false,false,false,false,35,Mushroom Mire
+Qilins Tri Horn,1,Bone,0,0,24,0,0,24,true,false,false,false,false,18,Mushroom Mire
+Fairy Flower Bud,1,Flower,12,0,0,0,0,12,false,false,true,false,false,23,Bone Wastes
+Leech Snail's Shell,2,Mineral,12,12,0,0,0,24,false,false,false,false,false,26,Bone Wastes
+Golem's-Eye Diamond,2,Gem,0,12,12,0,0,24,false,false,false,false,false,28,Bone Wastes
+Desert Metal,1,Ore,0,12,0,0,0,12,false,true,false,false,false,25,Bone Wastes
+Rotfly Cocoon,2,Bug,0,0,12,0,0,12,true,false,false,false,false,25,Bone Wastes
+Sphinx Flea,3,Bug,12,6,0,0,0,18,false,true,false,false,false,35,Bone Wastes
+Manwyrm Root,1,Plant,0,18,0,0,0,18,false,false,false,false,false,14,Bone Wastes
+Figment Pomme,2,Fruit,0,18,6,0,0,24,false,false,false,false,false,26,Bone Wastes
+Glass Ore,1,Ore,0,0,0,18,0,18,false,false,false,false,false,24,Bone Wastes
+Salamander's Fiery Tongue,1,Flesh,0,24,0,0,0,24,false,false,true,false,false,22,Bone Wastes
+Frog Leg,4,Flesh,0,0,24,12,0,36,false,false,false,true,false,33,Bone Wastes
+Golemite,3,Mineral,18,12,0,10,0,40,false,false,false,false,false,38,Bone Wastes
+Horned Jelly,2,Slime,18,0,0,0,0,18,false,true,false,true,false,20,Bone Wastes
+Thunderbird's Molted Feather,3,Flesh,0,0,30,0,10,40,false,false,false,false,false,60,Storm Plains
+Giantstool Mushroom,1,Fungus,0,20,0,0,0,20,false,true,false,false,false,40,Storm Plains
+Fire Flower,3,Flower,40,0,0,20,0,60,false,false,true,false,false,55,Storm Plains
+Copper Dollop,3,Slime,15,15,15,15,0,60,false,false,false,false,false,95,Storm Plains
+Static Spiderling,3,Bug,0,0,0,0,30,30,false,false,false,true,true,50,Storm Plains
+Slapping Turtle's Shell,1,Mineral,20,20,0,0,0,40,false,false,false,false,false,46,Storm Plains
+Antlered Jelly,2,Slime,30,0,0,0,0,30,false,true,false,true,false,28,Storm Plains
+Fulgurite Ore,2,Ore,0,0,0,30,0,30,false,false,false,false,false,40,Storm Plains
+Raiju Droppings,2,Essence,0,0,30,10,0,40,false,false,false,false,false,55,Storm Plains
+Electrocution Eel,2,Fish,10,10,10,0,0,30,false,false,false,true,false,45,Storm Plains
+Bogeyberry,1,Fruit,30,0,0,0,0,30,false,false,false,false,false,30,Storm Plains
+Spriggan Antler,2,Bone,0,0,40,0,0,40,true,false,false,false,false,38,Storm Plains
+Thunder Quartz,2,Gem,30,10,20,0,0,60,false,false,false,false,false,72,Storm Plains
+Mandragon Root,1,Plant,0,30,0,0,0,30,false,false,false,false,false,34,Ocean Coasts
+Dwarf Kraken,1,Fish,40,0,0,0,0,40,false,true,false,false,false,30,Ocean Coasts
+Reef Radish,3,Plant,0,30,0,0,0,30,true,false,false,false,true,32,Ocean Coasts
+Rotfly Adult,2,Bug,0,0,20,0,0,20,true,false,false,false,false,38,Ocean Coasts
+Saltwatermelon,2,Fruit,0,0,0,40,0,40,false,false,false,true,false,44,Ocean Coasts
+Selkie Lice,3,Bug,10,20,0,0,0,30,false,true,false,false,false,50,Ocean Coasts
+Nessie Pheromones,1,Essence,20,0,20,0,0,40,false,false,false,false,false,50,Ocean Coasts
+Jelly Blossom,3,Flower,0,0,0,0,30,30,false,false,false,false,false,55,Ocean Coasts
+Sea Salt,2,Mineral,30,0,0,0,10,40,false,false,false,false,false,55,Ocean Coasts
+Phantom Pomme,4,Fruit,0,10,30,0,0,40,true,false,false,false,true,64,Ocean Coasts
+Abyssalite,2,Mineral,30,20,0,0,10,60,false,false,false,false,false,79,Ocean Coasts
+Malachite Ore,3,Ore,30,10,0,0,20,60,false,false,false,false,false,93,Ocean Coasts
+Squid Vine,3,Plant,20,20,15,0,15,70,false,false,false,false,false,135,Ocean Coasts
+Banshee's Bloody Tongue,1,Flesh,0,40,0,0,0,40,false,false,true,false,false,32,Shadow Steppe
+Fairy Flower Bloom,1,Flower,20,0,0,0,0,20,false,false,true,false,false,35,Shadow Steppe
+Hallucinatory Shroom,3,Fungus,0,0,30,0,0,30,true,false,false,false,true,36,Shadow Steppe
+Sack of Composite Slime,1,Slime,0,0,30,0,0,30,false,false,false,false,false,36,Shadow Steppe
+Shadowveil Pearl,2,Gem,0,0,0,20,0,20,false,false,false,true,false,38,Shadow Steppe
+Cobweb Crayfish,3,Fish,10,0,20,0,0,30,false,false,true,false,false,48,Shadow Steppe
+Spider's-Bait Diamond,2,Gem,0,20,20,0,0,40,false,false,false,false,false,50,Shadow Steppe
+Barghast Canine,0,Bone,0,30,0,0,10,40,false,false,false,false,false,55,Shadow Steppe
+Photonic Spore,4,Fungus,0,10,0,30,0,40,true,false,true,false,false,52,Shadow Steppe
+Dropspider's Shadow,3,Essence,0,0,30,20,10,60,false,false,false,false,false,90,Shadow Steppe
+Mosquito Plant,4,Plant,10,0,20,0,30,60,false,false,false,false,false,105,Shadow Steppe
+Mote of Mana,4,Pure Mana,15,15,15,15,15,75,false,false,false,false,false,130,Shadow Steppe
+Bramble-Rose,2,Flower,16,0,0,0,0,16,false,true,false,false,true,45,Sulfuric Falls
+Acid Rutabaga,1,Plant,0,48,0,0,0,48,true,false,false,false,true,54,Sulfuric Falls
+Rotfly Matriarch,1,Bug,0,0,32,0,0,32,true,false,false,false,false,65,Sulfuric Falls
+Weeping Metal Ore,1,Ore,0,32,64,0,0,96,false,true,false,false,false,66,Sulfuric Falls
+Rottermelon,1,Fruit,0,0,0,64,0,64,false,false,false,true,false,68,Sulfuric Falls
+Daydream Pomme,3,Fruit,0,24,8,0,0,32,false,false,false,true,true,75,Sulfuric Falls
+Scimitar Crab's Shell,1,Mineral,32,32,0,0,0,64,false,false,false,false,false,76,Sulfuric Falls
+Shelled Pudding,1,Slime,32,0,0,32,0,64,false,false,false,false,false,90,Sulfuric Falls
+Creeping Mildew,2,Fungus,16,0,0,0,48,64,false,false,false,false,false,92,Sulfuric Falls
+Hangman Eel,2,Fish,24,24,24,0,0,72,false,false,false,false,false,95,Sulfuric Falls
+Naga's Fang,1,Bone,0,48,0,0,16,64,false,true,false,false,true,98,Sulfuric Falls
+Lamia's Shed Scales,2,Flesh,0,0,0,48,16,64,false,false,false,false,false,110,Sulfuric Falls
+Bioplasm,3,Essence,0,48,32,16,0,96,false,false,false,true,true,125,Sulfuric Falls
+Acid Pitfall Plant,2,Plant,16,0,40,0,40,96,false,false,false,false,false,145,Sulfuric Falls
+Poison Quartz,3,Gem,64,48,0,32,0,144,false,false,false,false,true,185,Sulfuric Falls
+Charredonnay,3,Fruit,48,0,48,24,24,144,true,false,false,false,false,260,Sulfuric Falls
+Silver Stag Anter,1,Bone,0,0,64,0,0,64,true,false,false,false,false,72,Ice Craggs
+Celestial Ore,2,Ore,0,0,16,0,0,16,false,false,true,true,false,45,Ice Craggs
+Feathered Gelatin,2,Slime,0,0,0,48,0,48,false,true,true,false,false,62,Ice Craggs
+Rock Salt,2,Mineral,24,0,0,0,8,32,true,false,false,true,false,68,Ice Craggs
+Courtier's Orchid,4,Flower,8,24,24,0,0,56,false,false,true,false,false,72,Ice Craggs
+Crag Crab,3,Fish,0,0,0,0,32,32,false,false,true,false,false,75,Ice Craggs
+Harpy's Heart of Stone,2,Flesh,16,0,0,32,0,48,false,true,false,false,false,76,Ice Craggs
+Sepulcher Widow,2,Bug,0,0,0,0,48,48,false,false,false,true,true,82,Ice Craggs
+Watchdog Daisy,1,Flower,0,16,0,48,0,64,false,false,false,false,false,83,Ice Craggs
+Griffin's-Whetstone Diamond,1,Gem,0,32,32,0,0,64,false,false,false,false,false,86,Ice Craggs
+Medusa Spore,1,Fungus,0,48,0,16,0,64,true,false,true,false,false,94,Ice Craggs
+Supernalite,3,Mineral,48,32,0,16,0,96,true,false,false,true,false,134,Ice Craggs
+Buoyant Blowfish,2,Fish,96,0,48,0,0,144,false,false,false,true,true,138,Ice Craggs
+Avalanche Cricket,1,Bug,24,24,32,32,0,112,true,true,false,false,false,140,Ice Craggs
+Harpy's Snare,4,Plant,24,24,24,0,24,96,false,false,false,false,false,150,Ice Craggs
+Stalking Skeleton's Fibula,2,Bone,0,0,40,40,16,96,false,false,false,false,false,150,Ice Craggs
+Ember of Mana,4,Pure Mana,24,24,24,24,24,120,false,false,false,false,false,165,Ice Craggs
+Eye of Newt,2,Flesh,0,16,0,0,0,16,true,true,false,false,false,34,Crystalline Forest
+Delirium Shroom,1,Fungus,0,0,48,0,0,48,true,false,false,false,true,63,Crystalline Forest
+Djinn Blossom,2,Flower,24,0,0,8,0,32,true,false,true,false,false,68,Crystalline Forest
+Ogre's Shadow,1,Essence,32,0,32,0,0,64,false,false,false,false,false,74,Crystalline Forest
+Phoenix Tear,4,Essence,0,24,24,8,0,56,false,true,false,false,false,82,Crystalline Forest
+Owlbear Pheremones,2,Essence,0,0,0,0,64,64,false,false,true,false,false,90,Crystalline Forest
+Daredevil Pepper,1,Plant,0,32,0,32,0,64,false,false,false,false,false,90,Crystalline Forest
+Geode Citrus,2,Fruit,0,16,0,0,48,64,false,false,false,false,false,94,Crystalline Forest
+Lazuli Ore,3,Ore,64,48,0,0,32,144,false,false,false,false,true,174,Crystalline Forest
+Shallow Grave Enoki,3,Fungus,32,64,64,32,0,192,false,true,true,false,false,200,Crystalline Forest
+Chimera Waste,0,Essence,0,0,64,32,0,96,false,false,true,false,false,118,Crystalline Forest
+Jeweled Scarab,0,Bug,0,24,24,24,0,72,false,false,false,false,false,105,Crystalline Forest
+Lustrous Pearl,0,Gem,0,0,0,32,0,32,false,false,false,true,false,60,Crystalline Forest
+Silver Dollop,0,Slime,24,24,24,24,0,96,false,false,false,false,false,138,Crystalline Forest
+Pegasus Mite,0,Bug,96,48,0,0,0,144,false,true,false,false,true,134,Crystalline Forest
+Sequined Custard,0,Slime,0,0,32,0,16,48,false,false,false,true,false,84,Crystalline Forest
+Hoarite,0,Mineral,55,55,0,22,0,132,true,false,false,true,false,167,Arctic
+Orchid of the Ice Princess,0,Flower,11,33,0,33,0,77,false,false,true,false,false,116,Arctic
+Draugr's Tibia,2,Bone,0,0,55,55,22,132,false,false,false,false,false,184,Arctic
+Snowflake Spore,0,Fungus,0,66,0,22,0,88,true,false,true,false,false,108,Arctic
+Hellhound Daisy,2,Flower,0,22,0,66,0,88,false,false,false,false,false,125,Arctic
+Yeti Antler,1,Bone,0,0,88,0,0,88,true,false,false,false,false,104,Arctic
+Nether Ore,3,Ore,0,0,22,0,0,22,false,false,true,true,false,51,Arctic
+Winged Gelatin,2,Slime,0,0,0,66,0,66,false,true,true,false,false,103,Arctic
+Blackfrost Lobster,2,Fish,0,0,0,0,44,44,false,false,true,false,false,104,Arctic
+Jotunn's Frozen Heart,2,Flesh,22,0,0,44,0,66,false,true,false,false,false,98,Arctic
+Direwolf's-Breath Diamond,1,Gem,0,44,44,0,0,88,false,false,false,false,false,118,Arctic
+Diamond Salt,2,Mineral,33,0,0,0,11,44,true,false,false,true,false,85,Arctic
+Frost Hopper,1,Bug,33,33,44,44,0,154,true,true,false,false,false,196,Arctic
+Abominable Tarantula,2,Bug,0,0,0,0,66,66,false,false,false,true,true,105,Arctic
+Icicle Pufferfish,2,Fish,132,0,66,0,0,198,false,false,false,true,true,210,Arctic
+Mana Conflagration,4,Pure Mana,35,45,55,65,75,275,false,false,true,true,false,316,Arctic
+Death's Embrace,4,Plant,33,33,33,0,33,132,false,false,false,false,false,196,Arctic
+Mana Blaze,0,Pure Mana,50,40,30,20,10,150,false,true,true,false,false,234,Dragon Oasis
+Gold Dollop,3,Slime,33,33,33,33,0,132,false,false,false,false,false,176,Dragon Oasis
+Pandemonium Shroom,1,Fungus,66,0,0,0,0,66,true,false,false,false,true,72,Dragon Oasis
+Dragonbreath Blossom,2,Flower,33,0,0,11,0,44,true,false,true,false,false,76,Dragon Oasis
+Dragonblood Tick,2,Bug,132,66,0,0,0,198,false,true,false,false,true,174,Dragon Oasis
+Bedazzled Custard,1,Slime,0,0,44,0,22,66,false,false,false,true,false,95,Dragon Oasis
+Dragonfire Pearl,3,Gem,0,0,0,44,0,44,false,false,false,true,false,76,Dragon Oasis
+Dragon Pheromones,2,Essence,0,0,0,0,88,88,false,false,true,false,false,151,Dragon Oasis
+Widowmaker Pepper,1,Plant,0,44,0,44,0,88,false,false,false,false,false,126,Dragon Oasis
+Dragon Tear,2,Essence,0,33,33,11,0,77,false,true,false,false,false,118,Dragon Oasis
+Funeral Pyre Enoki,4,Fungus,88,88,44,44,0,264,false,true,true,false,false,280,Dragon Oasis
+Amethyst Ore,2,Ore,66,66,0,0,33,165,false,false,false,false,true,206,Dragon Oasis
+Basilisk's Cornea,2,Flesh,0,22,0,0,0,22,true,true,false,false,false,54,Dragon Oasis
+Amphithere's Shadow,1,Essence,44,0,44,0,0,88,false,false,false,false,false,114,Dragon Oasis
+Magma Beetle,1,Bug,0,33,33,33,0,99,false,false,false,false,false,124,Dragon Oasis
+Dragonegg Citrus,2,Fruit,0,22,0,0,66,88,false,false,false,false,false,124,Dragon Oasis
+Dragon Dung,2,Essence,0,0,88,44,0,132,false,false,true,false,false,173,Dragon Oasis
+Cosmic Quartz,2,Gem,66,33,0,66,0,165,false,false,false,false,true,204,Crater
+Space Nautilus's Shell,1,Mineral,44,44,0,0,0,88,false,false,false,false,false,102,Crater
+Xeno Noir,3,Fruit,66,0,66,33,33,198,true,false,false,false,false,236,Crater
+Spark of Mana,4,Pure Mana,33,33,33,33,33,165,false,false,false,false,false,215,Crater
+Cosmic Cassava,1,Plant,0,66,0,0,0,66,true,false,false,false,true,82,Crater
+Xenoplasm,3,Essences,0,55,55,22,0,132,false,false,false,true,true,166,Crater
+Elder Being's Tusk,2,Bone,0,66,0,0,22,88,false,true,false,false,true,114,Crater
+Rotfly Mutant,1,Bug,0,0,44,0,0,44,true,false,false,false,false,74,Crater
+Nightmare Pomme,3,Fruit,0,33,11,0,0,44,false,false,false,true,true,72,Crater
+Body Snatcher's Sloughed Skin,0,Flesh,0,0,0,66,22,88,false,false,false,false,false,132,Crater
+Armored Pudding,0,Slime,44,0,0,44,0,88,false,false,false,false,false,115,Crater
+Stalking Mold,0,Fungus,22,0,0,0,66,88,false,false,false,false,false,123,Crater
+Inverted Bramble-Rose,0,Flower,22,0,0,0,0,22,false,true,false,false,true,46,Crater
+Barracuda Plant,0,Plant,22,0,55,0,55,132,false,false,false,false,false,172,Crater
+Guillotine Eel,0,Fish,33,33,33,0,0,99,false,false,false,false,false,126,Crater
+Liquid Metal Ore,0,Ore,0,44,88,0,0,132,false,true,false,false,false,162,Crater
+Slaughtermelon,0,Fruit,0,0,0,76,0,76,false,false,false,true,false,105,Crater
+Platinum Slime,3,Slime,42,42,42,0,0,126,false,false,false,false,false,178,Magical Wasteland
+Nuclear Shadow,3,Essence,0,70,70,28,0,168,false,true,false,false,false,228,Magical Wasteland
+Witchbramble Vine,3,Plant,42,42,42,0,42,168,false,false,false,false,false,210,Magical Wasteland
+Mass Grave Enoki,3,Fungus,56,112,112,56,0,336,false,true,true,false,false,386,Magical Wasteland
+Orchid of the Witch Queen,0,Flower,28,70,0,70,0,168,false,false,true,false,false,248,Magical Wasteland
+Underworld Pomegranate,4,Fruit,28,28,28,140,0,224,true,false,false,true,false,332,Magical Wasteland
+Venous Witch-Trap,2,Plant,28,0,70,0,70,168,false,false,false,false,false,214,Magical Wasteland
+Blightroach,0,Bug,0,42,42,42,0,126,false,false,false,false,false,185,Magical Wasteland
+Lethal Injection Eel,0,Fish,42,42,42,0,0,126,false,false,false,false,false,164,Magical Wasteland
+Sinfandel,0,Fruit,80,0,80,80,40,280,true,false,false,false,false,362,Magical Wasteland
+Lich's Femur,0,Bone,0,0,70,70,28,168,false,false,false,false,false,247,Magical Wasteland
+Sorcerite,3,Mineral,70,70,0,28,0,168,true,false,false,true,false,232,Magical Wasteland
+Arcane Truffle,3,Fungus,0,42,42,42,42,164,false,false,false,false,false,236,Magical Wasteland
+Ectoplasm,3,Essence,0,70,70,28,0,168,false,false,false,true,true,226,Magical Wasteland
+Cyclops Skull,1,Bone,0,0,42,42,42,126,false,false,false,false,false,200,Magical Wasteland
+Blackgold Ore,2,Ore,84,84,0,0,42,210,false,false,false,false,true,256,Magical Wasteland
+Arcane Quartz,2,Gem,84,0,0,84,42,210,false,false,false,false,true,264,Magical Wasteland
+Hocus Locust,4,Bug,28,28,140,28,0,224,true,true,false,false,false,287,Magical Wasteland
+Dazzling Mana,4,Pure Mana,42,42,42,42,42,210,false,true,true,false,false,345,Magical Wasteland
+Mana Maelstrom,4,Pure Mana,98,28,28,28,28,210,false,false,false,true,true,375,Magical Wasteland
+Mana Vortex,0,Pure Mana,28,98,28,28,28,210,true,false,false,false,true,400,Magical Wasteland
+Mana Prism,4,Pure Mana,28,28,98,28,28,210,false,true,false,true,false,425,Magical Wasteland
+Mana Heart,4,Pure Mana,28,28,28,98,28,210,true,false,true,false,false,450,Magical Wasteland
+Mana Singularity,4,Pure Mana,28,28,28,28,98,210,false,false,true,false,true,475,Magical Wasteland
