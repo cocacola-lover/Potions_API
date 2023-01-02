@@ -9,6 +9,7 @@ function main (args : string[]) {
         const createTables = require('./deploy');
 
         createTables();
+        console.log('All tables have been deployed 🌈');
     }
 }   
 

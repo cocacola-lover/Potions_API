@@ -17,4 +17,16 @@ function createTables() {
     }
     connection.end();
 }
+// Function to for reading csv
+function readCSVAndMake(filePath, fn) {
+    const Fs = require('fs');
+    const CsvReadableStream = require('csv-reader');
+    let inputStream = Fs.createReadStream(filePath, 'utf8');
+    inputStream
+        .pipe(new CsvReadableStream({ parseNumbers: true, parseBooleans: true, trim: true, asObject: true }))
+        .on('data', fn);
+}
+// Function to fill tables with data
+function fillTables() {
+}
 module.exports = createTables;
