@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "csv-reader": "^1.0.10",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
