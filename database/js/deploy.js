@@ -26,8 +26,9 @@ const makeFormatQueries = require("./makeQueries");
 function makeAQuery(connection, value) {
     return new Promise((resolve) => {
         connection.query(value, function (error, results, fields) {
-            if (error)
-                console.log(error.toString());
+            if (error) {
+                console.log(error.toString(), value);
+            }
             resolve(true);
         });
     });
@@ -38,26 +39,64 @@ function createTables(connection) {
         // Create tables using string queries from jsons/create_table_queires.json
         for (let value of Object.values(createQueries))
             yield makeAQuery(connection, value);
-        console.log('Tables have been deployed');
     });
 }
 // Function to for reading csv that returns a promise
 function readCSVAndMake(filePath, callback) {
     return new Promise((resolve) => {
         let inputStream = fs.createReadStream(filePath, 'utf8');
+        const promises = [];
         inputStream
             .pipe(new CsvReadableStream({ parseNumbers: true, parseBooleans: true, trim: true, asObject: true }))
-            .on('data', callback)
-            .on('end', resolve);
+            .on('data', (data) => promises.push(callback(data)))
+            .on('end', () => Promise.all(promises).then(resolve));
     });
 }
-// Function that read potionQuality.csv
+// Function that reads potionQuality.csv
 function readPotionQuality(connection) {
     return __awaiter(this, void 0, void 0, function* () {
-        yield readCSVAndMake('./../csv/potionQuality.csv', (json) => __awaiter(this, void 0, void 0, function* () {
-            console.log(`Reading ${json.Tier}`);
-            yield makeAQuery(connection, makeFormatQueries.insertIntoPotionQuality(json));
-            console.log(`Read ${json.Tier}`);
+        yield readCSVAndMake('./csv/potionQuality.csv', (json) => __awaiter(this, void 0, void 0, function* () {
+            return makeAQuery(connection, makeFormatQueries.insertIntoPotionQuality(json));
+        }));
+    });
+}
+// Fucntion that reads potions.csv
+function readPotions(connection) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const types = new Map();
+        let i = 1;
+        yield readCSVAndMake('./csv/potions.csv', (json) => __awaiter(this, void 0, void 0, function* () {
+            if (!types.has(json.Type)) {
+                types.set(json.Type, i++);
+                yield makeAQuery(connection, makeFormatQueries.insertIntoPotionType(json.Type));
+            }
+            json.Type = types.get(json.Type);
+            return makeAQuery(connection, makeFormatQueries.insertIntoPotions(json));
+        }));
+    });
+}
+// Fucntion that reads ingredients.csv
+function readIngredients(connection) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const types = new Map();
+        const locations = new Map();
+        let ity = 1, ilo = 1;
+        yield readCSVAndMake('./csv/ingredients.csv', (json) => __awaiter(this, void 0, void 0, function* () {
+            if (!types.has(json.Type)) {
+                types.set(json.Type, ity++);
+                if (!locations.has(json.Location)) {
+                    locations.set(json.Location, ilo++);
+                    yield makeAQuery(connection, makeFormatQueries.insertIntoIngredientOrigin(locations.get(json.Location), json.Location));
+                }
+                yield makeAQuery(connection, makeFormatQueries.insertIntoIngredientType(types.get(json.Type), json.Type));
+            }
+            else if (!locations.has(json.Location)) {
+                locations.set(json.Location, ilo++);
+                yield makeAQuery(connection, makeFormatQueries.insertIntoIngredientOrigin(locations.get(json.Location), json.Location));
+            }
+            json.Type = types.get(json.Type);
+            json.Location = locations.get(json.Location);
+            return makeAQuery(connection, makeFormatQueries.insertIntoIngredients(json));
         }));
     });
 }
@@ -65,6 +104,8 @@ function readPotionQuality(connection) {
 function fillTables(connection) {
     return __awaiter(this, void 0, void 0, function* () {
         yield readPotionQuality(connection);
+        yield readPotions(connection);
+        yield readIngredients(connection);
     });
 }
 // Main function that deploys tables to database
