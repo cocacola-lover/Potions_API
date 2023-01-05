@@ -1,0 +1,8 @@
+{
+    "Ingredients" : "DROP TABLE Ingredients;",
+    "IngredientType" : "DROP TABLE IngredientType;",
+    "IngredientOrigin" : "DROP TABLE IngredientOrigin;",
+    "Potions" : "DROP TABLE Potions;",
+    "PotionQuality" : "DROP TABLE PotionQuality;",
+    "PotionType" : "DROP TABLE PotionType;"
+}
