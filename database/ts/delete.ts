@@ -5,7 +5,6 @@
 import mysql = require('mysql');
   // json
 const drop : Object = require('./../jsons/drop_table_queries.json');
-const {host, user, password, database} = require('./../../database_info.json');
 
 // Convert connection.query so it returns a promise
 function makeAQuery (connection : mysql.Connection, value : string) {
@@ -18,7 +17,7 @@ function makeAQuery (connection : mysql.Connection, value : string) {
   }
 
 
-async function dropTables() {
+async function dropTables({host, user, password, database} : mainInput) {
   const connection = mysql.createConnection({
     host, user, password, database
   });
@@ -26,6 +25,7 @@ async function dropTables() {
   for (const value of Object.values(drop)) await makeAQuery(connection, value);
 
   connection.end();
+  console.log('All tables have been dropped 🌈');
 }
 
 module.exports = dropTables;

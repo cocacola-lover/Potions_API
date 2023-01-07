@@ -15,7 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mysql = require("mysql");
 // json
 const drop = require('./../jsons/drop_table_queries.json');
-const { host, user, password, database } = require('./../../database_info.json');
 // Convert connection.query so it returns a promise
 function makeAQuery(connection, value) {
     return new Promise((resolve) => {
@@ -26,7 +25,7 @@ function makeAQuery(connection, value) {
         });
     });
 }
-function dropTables() {
+function dropTables({ host, user, password, database }) {
     return __awaiter(this, void 0, void 0, function* () {
         const connection = mysql.createConnection({
             host, user, password, database
@@ -34,6 +33,7 @@ function dropTables() {
         for (const value of Object.values(drop))
             yield makeAQuery(connection, value);
         connection.end();
+        console.log('All tables have been dropped 🌈');
     });
 }
 module.exports = dropTables;
