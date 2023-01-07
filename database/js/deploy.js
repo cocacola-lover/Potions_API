@@ -17,8 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mysql = require("mysql");
 const fs = require("fs");
 const CsvReadableStream = require('csv-reader');
-// Jsons
-const { host, user, password, database } = require('./../../database_info.json');
+// Json
 const createQueries = require('./../jsons/create_table_queries.json');
 // My modules
 const makeFormatQueries = require("./makeQueries");
@@ -108,15 +107,31 @@ function fillTables(connection) {
         yield readIngredients(connection);
     });
 }
+function checkIfDeployed(connection) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return yield new Promise((resolve) => {
+            connection.query('SHOW TABLES;', function (err, results) {
+                resolve(results[0] !== undefined);
+            });
+        });
+    });
+}
 // Main function that deploys tables to database
-function deploy() {
+function deploy({ host, user, password, database }) {
     return __awaiter(this, void 0, void 0, function* () {
         const connection = mysql.createConnection({
             host, user, password, database
         });
+        if (yield checkIfDeployed(connection)) {
+            console.log('The database is not empty');
+            connection.end();
+            return;
+        }
+        ;
         yield createTables(connection);
         yield fillTables(connection);
         connection.end();
+        console.log('All tables have been deployed 🌈');
     });
 }
 module.exports = deploy;

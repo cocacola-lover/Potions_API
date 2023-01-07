@@ -8,8 +8,7 @@ import mysql = require('mysql');
 import fs = require('fs');
 const CsvReadableStream = require('csv-reader');
 
-  // Jsons
-const {host, user, password, database} = require('./../../database_info.json');
+  // Json
 const createQueries : Object = require('./../jsons/create_table_queries.json');
   // My modules
 import makeFormatQueries = require('./makeQueries');
@@ -110,17 +109,32 @@ async function fillTables (connection : mysql.Connection) {
     await readIngredients(connection);
 }
 
+async function checkIfDeployed(connection : mysql.Connection) : Promise<boolean> {
+    return await new Promise((resolve) => {
+      connection.query('SHOW TABLES;', function (err, results) {
+        resolve( (results as any[])[0] !== undefined);
+      });
+    })
+}
+
 // Main function that deploys tables to database
-async function deploy() {
+async function deploy({host, user, password, database} : mainInput) {
   const connection = mysql.createConnection({
     host, user, password, database
   });
+  if (await checkIfDeployed(connection)) {
+    console.log('The database is not empty');
+    connection.end();
+    return;
+  };
 
   await createTables(connection);
 
   await fillTables(connection);
 
   connection.end();
+  console.log('All tables have been deployed 🌈');
+
 }
 
 
