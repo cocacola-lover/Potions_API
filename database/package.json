@@ -12,10 +12,12 @@
   "license": "ISC",
   "dependencies": {
     "csv-reader": "^1.0.10",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
     "@types/mysql": "^2.15.21",
-    "@types/node": "^18.11.18"
+    "@types/node": "^18.11.18",
+    "@types/prompt-sync": "^4.2.0"
   }
 }
