@@ -1,16 +1,27 @@
 
+import prompt = require('prompt-sync');
+const promptS = prompt({sigint: true});
 
-function main (args : string[]) {
-    let command : string | undefined = args.shift(); 
+async function main () {
 
-    if (command === undefined) {
-        console.log('Hello my brother 🌈');
+    const host = promptS('Please write host name: ');
+    const user = promptS('Please write username: ');
+    const password = promptS('Please write password: ');
+    const database = promptS('Please write database name: ');
+
+    const command = promptS('Do you want to deploy tables or drop them? Write "drop" or "deploy": ')
+
+    if (command === 'drop') {
+        const dropTables = require('./delete');
+
+        await dropTables({host, user, password, database});
     } else if (command === 'deploy') {
         const createTables = require('./deploy');
 
-        createTables();
-        console.log('All tables have been deployed 🌈');
+        await createTables({host, user, password, database});
+    } else {
+        console.log('Wrong Input');
     }
 }   
 
-main(['deploy']);
+main();
